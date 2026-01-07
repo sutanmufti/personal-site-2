@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Sutan Mufti</title>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont']
+          },
+          colors: {
+            bg: '#141414',
+            fg: '#e3e3e3',
+            accent: '#c2ecff',
+            muted: '#94a3b8'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-fg font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-10 border-b border-slate-800 bg-bg/80 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+      <h1 class="text-lg font-semibold">Sutan Mufti</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="text-muted hover:text-fg">Home</a>
+        <a href="about.html" class="text-fg font-medium">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-3xl px-6 py-24">
+
+    <h2 class="mb-10 text-4xl font-semibold tracking-tight">About</h2>
+
+    <div class="space-y-8 text-muted leading-relaxed">
+      <p>
+        My professional foundation is in <strong class="text-fg">urban and infrastructure planning</strong>.
+        I was trained as a planner before becoming deeply involved with software, completing a
+        BSc in Urban Planning at Institut Teknologi Bandung and an MSc in Infrastructure Planning,
+        Appraisal, and Development at University College London.
+      </p>
+
+      <p>
+        I work with software not as an end in itself, but as a means to strengthen planning,
+        appraisal, and decision-making processes. Cities and infrastructure systems are inherently
+        spatial, complex, and data-rich — and my work focuses on using geospatial analysis,
+        modelling, and automation to make those systems more legible and actionable.
+      </p>
+
+      <p>
+        In practice, this has meant operating at the intersection of planning and engineering.
+        I have supported infrastructure and transport projects by building spatial data models,
+        analytical workflows, and planning tools that translate policy questions into evidence.
+        My experience spans public-sector contexts, such as transport appraisal and GTFS-based
+        transit modelling, as well as private-sector infrastructure development and energy planning.
+      </p>
+
+      <p>
+        Over time, I have increasingly taken on technical leadership responsibilities — designing
+        data pipelines, cloud environments, and geospatial platforms — while maintaining a
+        planning-led perspective. I am not a software engineer at heart; rather, I use engineering
+        disciplines to extend the reach and impact of urban and infrastructure planning.
+      </p>
+
+      <p>
+        I am particularly drawn to problems that sit between disciplines: where spatial thinking,
+        infrastructure economics, policy constraints, and technical systems meet. I value clarity,
+        restraint, and solutions that scale responsibly — both technically and institutionally.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-10 text-center text-sm text-muted">
+    © <span id="year"></span> Sutan Mufti
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

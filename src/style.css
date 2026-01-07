@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+
+  --color-bg: #141414;
+  --color-fg: #e3e3e3;
+  --color-accent: #c2ecff;
+  --color-muted: #94a3b8;
+}

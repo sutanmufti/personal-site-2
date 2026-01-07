@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Homepage</title>
+  
+  <!-- Inter font (Geist-like, neutral) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-bg text-fg font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-10 border-b border-slate-800 bg-bg/80 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+      <h1 class="text-lg font-semibold">Sutan Mufti</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-accent hover:underline">Home</a>
+        <a href="about.html" class="text-accent hover:underline">About</a>
+        <a href="#selected-work" class="text-accent hover:underline">Selected Work</a>
+        <a href="#contact" class="text-accent hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-6xl px-6 py-24">
+
+    <!-- Hero -->
+    <section class="mb-32 grid items-center gap-12 md:grid-cols-2">
+      <div>
+        <h2 class="mb-6 text-5xl font-semibold tracking-tight sm:text-6xl">
+          Building cities, systems, and spatial intelligence.
+        </h2>
+        <p class="mb-8 max-w-xl text-lg text-muted">
+          I'm <strong class="text-fg">Sutan Mufti</strong> — working at the intersection of city planning, geospatial software, and cloud infrastructure to design systems that scale from maps to metropolitan regions.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="#selected-work" class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-200">Selected Work</a>
+          <a href="#contact" class="rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold hover:bg-slate-800">Contact Me</a>
+        </div>
+
+        <!-- Subtle socials -->
+        <div class="mt-6 flex gap-4 text-muted">
+          <a href="https://github.com/sutanmufti" target="_blank" aria-label="GitHub" class="hover:text-fg">
+            <img src="https://cdn.simpleicons.org/github/94a3b8" class="h-5 w-5" />
+          </a>
+          <a href="https://linkedin.com/in/sutanmufti" target="_blank" aria-label="LinkedIn" class="hover:text-fg">
+            <img src="https://cdn.simpleicons.org/linkedin/94a3b8" class="h-5 w-5" />
+          </a>
+          <a href="https://instagram.com/sutanmufti" target="_blank" aria-label="Instagram" class="hover:text-fg">
+            <img src="https://cdn.simpleicons.org/instagram/94a3b8" class="h-5 w-5" />
+          </a>
+        </div>
+      </div>
+
+      <div class="relative mx-auto flex h-64 w-64 items-center justify-center rounded-2xl border border-slate-700 bg-slate-900 shadow-xl md:ml-auto">
+        <img
+          src="pp.png"
+          alt="Sutan Mufti"
+          class="h-full w-full object-cover rounded-2xl"
+        />
+      </div>
+    </section>
+
+    <!-- What I Do -->
+    <section id="what-i-do" class="mt-32">
+      <h3 class="mb-16 text-center text-3xl font-bold tracking-tight">What I Do</h3>
+      <div class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <h4 class="mb-3 text-lg font-semibold text-fg">City & Infrastructure Planning</h4>
+          <p class="text-muted text-sm leading-relaxed">Graduate of Infrastructure and City Planning from UCL London and City Planning from Institut Teknologi Bandung, with a strong foundation in urban systems, policy, and spatial development.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <h4 class="mb-3 text-lg font-semibold text-fg">GIS Software Full-stack Engineering</h4>
+          <p class="text-muted text-sm leading-relaxed">Delivering end-to-end GIS solutions, from spatial APIs and data pipelines to performant web-based mapping interfaces.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <h4 class="mb-3 text-lg font-semibold text-fg">DevOps & Cloud Engineering</h4>
+          <p class="text-muted text-sm leading-relaxed">Designing and managing cloud infrastructure, CI/CD pipelines, and production systems.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <h4 class="mb-3 text-lg font-semibold text-fg">Spatial Data Engineering & Analysis</h4>
+          <p class="text-muted text-sm leading-relaxed">Large-scale spatial data transformation and analysis using cloud-powered workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="selected-work" class="mt-32">
+      <h3 class="mb-16 text-center text-3xl font-bold tracking-tight">Selected Work</h3>
+      <div class="mx-auto max-w-4xl space-y-8">
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <h4 class="mb-2 text-lg font-semibold text-fg">Amberside Energy Ltd, UK</h4>
+          <p class="mb-4 text-sm text-muted">Providing planning-led software and data engineering solutions for infrastructure and energy development.</p>
+          <ul class="space-y-2 text-sm text-muted list-disc list-inside">
+            <li>Energy supply and demand modelling with spatial context. Identified and appraised sites suitable for solar farm development</li>
+            <li>Data migration between legacy and modern systems.</li>
+            <li>Data extraction, visualisation, and automation workflows.</li>
+            <li>Translation of domain requirements into scalable technical solutions.</li>
+            <li>Cloud infrastructure management</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur">
+          <div class="mb-4 flex items-center gap-4">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/87/The_World_Bank_logo.svg"
+              alt="World Bank Group logo"
+              class="h-10 w-auto"
+            />
+            <h4 class="text-lg font-semibold text-fg">The World Bank Group</h4>
+          </div>
+          <p class="mb-4 text-sm text-muted">Transport team — spatial analysis and data engineering for project appraisal.</p>
+          <ul class="space-y-2 text-sm text-muted list-disc list-inside">
+            <li>GTFS data model design for public transport analysis.</li>
+            <li>Spatial analysis supporting investment and appraisal decisions.</li>
+            <li>Application of GIS within policy-driven transport initiatives.</li>
+            <li>Spatial data analysis.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Web Portfolio -->
+    <section class="mt-32">
+      <h3 class="mb-16 text-center text-3xl font-bold tracking-tight">Web Portfolio</h3>
+      <div class="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 md:grid-cols-3">
+
+        <a href="https://storymap.ceritapeta.co.uk/" target="_blank" class="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur transition hover:border-slate-600">
+          <span class="absolute right-4 top-4 text-muted group-hover:text-fg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5m0-4.5L10.5 13.5M6 18h6a6 6 0 006-6v-1.5" />
+            </svg>
+          </span>
+          <h4 class="mb-3 text-lg font-semibold text-fg group-hover:underline">Indonesian High-Speed Rail Story Map</h4>
+          <p class="text-sm text-muted leading-relaxed">An interactive story map where narrative paragraphs are synchronised with spatial context, exploring the development of Indonesia’s high-speed rail.</p>
+        </a>
+
+        <a href="https://westjava.ceritapeta.co.uk/" target="_blank" class="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur transition hover:border-slate-600">
+          <span class="absolute right-4 top-4 text-muted group-hover:text-fg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5m0-4.5L10.5 13.5M6 18h6a6 6 0 006-6v-1.5" />
+            </svg>
+          </span>
+          <h4 class="mb-3 text-lg font-semibold text-fg group-hover:underline">West Java Infrastructure Atlas</h4>
+          <p class="text-sm text-muted leading-relaxed">A curated, map-driven catalogue of infrastructure projects across West Java, designed to support spatial exploration and regional understanding.</p>
+        </a>
+
+        <a href="https://rekayasadata.co.uk/" target="_blank" class="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur transition hover:border-slate-600">
+          <span class="absolute right-4 top-4 text-muted group-hover:text-fg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5m0-4.5L10.5 13.5M6 18h6a6 6 0 006-6v-1.5" />
+            </svg>
+          </span>
+          <h4 class="mb-3 text-lg font-semibold text-fg group-hover:underline">Rekayasa Data</h4>
+          <p class="text-sm text-muted leading-relaxed">A writing and experimentation space focused on spatial data science, cloud computing, and GIS-driven workflows.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Tools I Use -->
+    <section class="mt-32">
+      <h3 class="mb-16 text-center text-3xl font-bold tracking-tight">Tools I Use</h3>
+      <div class="mx-auto grid max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4">
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/qgis/ffffff" class="h-8 w-8" alt="QGIS" />
+          <span class="text-sm text-muted">QGIS</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/arcgis/ffffff" class="h-8 w-8" alt="ArcGIS" />
+          <span class="text-sm text-muted">ArcGIS</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/python/ffffff" class="h-8 w-8" alt="Python" />
+          <span class="text-sm text-muted">Python</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/typescript/ffffff" class="h-8 w-8" alt="TypeScript" />
+          <span class="text-sm text-muted">TypeScript</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/terraform/ffffff" class="h-8 w-8" alt="Terraform" />
+          <span class="text-sm text-muted">Terraform</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/googlecloud/ffffff" class="h-8 w-8" alt="Google Cloud" />
+          <span class="text-sm text-muted">Google Cloud</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/apachespark/ffffff" class="h-8 w-8" alt="Apache Spark" />
+          <span class="text-sm text-muted">Apache Spark</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/apache/ffffff" class="h-8 w-8" alt="Apache Sedona" />
+          <span class="text-sm text-muted">Apache Sedona</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/geopandas/ffffff" class="h-8 w-8" alt="GeoPandas" />
+          <span class="text-sm text-muted">GeoPandas</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/git/ffffff" class="h-8 w-8" alt="Git" />
+          <span class="text-sm text-muted">Git</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/github/ffffff" class="h-8 w-8" alt="GitHub" />
+          <span class="text-sm text-muted">GitHub</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/nodedotjs/ffffff" class="h-8 w-8" alt="Node.js" />
+          <span class="text-sm text-muted">Node.js</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/svelte/ffffff" class="h-8 w-8" alt="SvelteKit" />
+          <span class="text-sm text-muted">SvelteKit</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/mapbox/ffffff" class="h-8 w-8" alt="Mapbox" />
+          <span class="text-sm text-muted">Mapbox</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/openstreetmap/ffffff" class="h-8 w-8" alt="MapLibre" />
+          <span class="text-sm text-muted">MapLibre</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/duckdb/ffffff" class="h-8 w-8" alt="DuckDB" />
+          <span class="text-sm text-muted">DuckDB</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/40 p-6 backdrop-blur">
+          <img src="https://cdn.simpleicons.org/postgresql/ffffff" class="h-8 w-8" alt="PostgreSQL / PostGIS" />
+          <span class="text-sm text-muted">PostgreSQL &amp; PostGIS</span>
+        </div>
+
+      </div>
+    </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="border-t border-slate-800 py-10 text-center text-sm text-muted">
+    <div class="mb-4 flex justify-center gap-6">
+      <a href="https://github.com/sutanmufti" target="_blank" aria-label="GitHub" class="hover:text-fg">GitHub</a>
+      <a href="https://linkedin.com/in/sutanmufti" target="_blank" aria-label="LinkedIn" class="hover:text-fg">LinkedIn</a>
+      <a href="https://instagram.com/sutanmufti" target="_blank" aria-label="Instagram" class="hover:text-fg">Instagram</a>
+    </div>
+    © <span id="year"></span> Sutan Mufti
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
